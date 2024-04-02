@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+    @font-face {
+      font-family: 'Figtree-normal';
+      src: url("./assets/fonts/Figtree-VariableFont_wght.ttf");
+    }
+
+    @font-face{
+      font-family: 'Figtree-italic';
+      src: url("./assets\fonts\Figtree-Italic-VariableFont_wght.ttf");
+    }
+
+    body {
+      background-color: #F4D04E;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      
+    }
+
+    .card{
+      font-family: 'Figtree-normal';
+      max-width: 384px;
+      height: auto;
+      background-color: white;
+      border: 1px solid;
+      border-radius: 20px;
+      box-shadow: 8px 8px;
+      display: flex;
+      flex-direction: column;
+      padding: 24px 24px 24px 24px;
+      transition: all 0.25s ease;
+    }
+    
+    .card:hover{
+      box-shadow: 16px 16px;
+    }
+
+    .illustration{
+      border-radius: 10px;
+    }
+
+    .text{
+      margin-top: 24px;
+    }
+    
+    .title {
+      color: #F4D04E;
+      margin: 0px 0px 0px 0px;
+    }
+
+    .tag{
+      font-size: 14px;
+      width:max-content;
+      background-color: #F4D04E;
+      padding: 8px;
+      border-radius: 4px;  
+    }
+    
+    .published{
+      margin-top: 24px;
+    }
+
+    .summary{
+      padding-right: 12px;
+      color: grey;
+    }
+    
+    .author {
+      margin-top: 12px;
+      display: flex;
+      flex-direction: row; 
+      align-items: center; 
+    }
+
+    .author strong {
+      justify-content:center;
+      vertical-align: middle;
+    }
+
+    .author img {
+      width: 32px; 
+      padding-right: 12px;
+    }
+
+    .attribution { font-size: 11px; text-align: center; margin-top: 24px;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="./assets/images/illustration-article.svg" class="illustration">
+    <div class="text">
+      <strong class="tag">Learning</strong>
+      <p class="published">Published 21 Dec 2023</p>
+      <h2 class="title">HTML & CSS foundations</h2>
+      <p class="summary">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+    </div>
+    <div class="author"> 
+      <img src="./assets/images/image-avatar.webp">
+      <strong>Greg Hooper</strong>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Mattlearn</a>.
+  </div>
+</body>
+</html>
